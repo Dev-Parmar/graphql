@@ -10,9 +10,9 @@ favMovies: [Movie!]
 
 type Query{
 users: [User!]!
-user(id: ID!): User
+user(id: ID!): User!
 movies:[Movie!]!
-movie(name:String!): Movie
+movie(name:String!): Movie!
 }
 
 input NewUser{
@@ -35,7 +35,7 @@ deleteUser(id: ID!):User
 
 type Movie{
 name: String!
-releaseYear: Int!
+realeaseYear: Int!
 }
 
 
